@@ -43,7 +43,7 @@ steps:
     command: 'publish'
     publishWebProjects: true
 - task: WhiteSource Bolt@20
-  inputs:
+  displayName: 'Run WhiteSource Bolt'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
